@@ -2,7 +2,7 @@ import Home from './pages/Home'
 
 export default function App() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-white text-[#0F172A] min-h-screen">
       <Home />
     </div>
   )
