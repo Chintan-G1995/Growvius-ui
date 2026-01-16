@@ -29,7 +29,7 @@ export default function Header() {
           <img 
             src={logo}
             alt="Growvius Logo" 
-            className="h-24 w-44 object-contain"
+            className="h-20 w-34 object-contain"
           />
         </div>
 
