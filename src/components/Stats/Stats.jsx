@@ -7,12 +7,12 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section className="py-12 sm:py-16 md:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
         {stats.map((s) => (
-          <div key={s.label}>
-            <h3 className="text-4xl text-[#2563EB] font-bold">{s.value}</h3>
-            <p className="text-[#334155]">{s.label}</p>
+          <div key={s.label} className="px-2 sm:px-0">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl text-[#2563EB] font-bold">{s.value}</h3>
+            <p className="text-xs sm:text-sm md:text-base text-[#334155] mt-1 sm:mt-2">{s.label}</p>
           </div>
         ))}
       </div>

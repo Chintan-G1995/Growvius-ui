@@ -60,14 +60,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+    <section id="contact" className="py-16 sm:py-20 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="bg-[#F8FAFC] p-8 rounded-xl border border-gray-200"
+          className="bg-[#F8FAFC] p-6 sm:p-8 rounded-xl border border-gray-200"
         >
-          <h3 className="text-2xl mb-6 text-[#0F172A]">Start Your AI Journey</h3>
+          <h3 className="text-xl sm:text-2xl mb-5 sm:mb-6 text-[#0F172A]">Start Your AI Journey</h3>
           {["Name", "Email", "Contact"].map((f) => (
             <div key={f}>
               <input
@@ -111,20 +111,20 @@ export default function Contact() {
         </form>
 
         <div>
-          <h3 className="text-3xl mb-6 text-[#0F172A]">Get In Touch</h3>
-          <h4 className="text-lg font-semibold mt-8 mb-3 text-[#0F172A]">Email</h4>
-          <p className="mb-4 text-[#334155]">📧 info@growvius.com</p>
-          <h4 className="text-lg font-semibold mt-8 mb-3 text-[#0F172A]">Contact</h4>
-          <p className="mb-4 text-[#334155]">📞 +91 73832 81968</p>
+          <h3 className="text-2xl sm:text-3xl mb-6 text-[#0F172A]">Get In Touch</h3>
+          <h4 className="text-base sm:text-lg font-semibold mt-6 sm:mt-8 mb-2 sm:mb-3 text-[#0F172A]">Email</h4>
+          <p className="mb-4 text-sm sm:text-base text-[#334155]">📧 info@growvius.com</p>
+          <h4 className="text-base sm:text-lg font-semibold mt-6 sm:mt-8 mb-2 sm:mb-3 text-[#0F172A]">Contact</h4>
+          <p className="mb-4 text-sm sm:text-base text-[#334155]">📞 +91 73832 81968</p>
           
-          <h4 className="text-lg font-semibold mt-8 mb-3 text-[#0F172A]">India</h4>
-          <p className="mb-6 text-[#334155]">📍E-112, Titanium City Center, 100.ft road, Prahladnagar, Ahmedabad - 380015</p>
+          <h4 className="text-base sm:text-lg font-semibold mt-6 sm:mt-8 mb-2 sm:mb-3 text-[#0F172A]">India</h4>
+          <p className="mb-6 text-xs sm:text-sm md:text-base text-[#334155]">📍E-112, Titanium City Center, 100.ft road, Prahladnagar, Ahmedabad - 380015</p>
           
-          <h4 className="text-lg font-semibold mb-3 text-[#0F172A]">Dubai</h4>
-          <p className="mb-6 text-[#334155]">📍403, Al Youseef Tower, Khalid Bin Walid Bank Street, Al Fahidi, Dubai, UAE</p>
+          <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 text-[#0F172A]">Dubai</h4>
+          <p className="mb-6 text-xs sm:text-sm md:text-base text-[#334155]">📍403, Al Youseef Tower, Khalid Bin Walid Bank Street, Al Fahidi, Dubai, UAE</p>
           
-          <h4 className="text-lg font-semibold mt-8 mb-4 text-[#0F172A]">Follow Us</h4>
-          <div className="flex gap-4">
+          <h4 className="text-base sm:text-lg font-semibold mt-6 sm:mt-8 mb-3 sm:mb-4 text-[#0F172A]">Follow Us</h4>
+          <div className="flex gap-3 sm:gap-4">
             <a
               href="https://www.linkedin.com/company/growvius"
               target="_blank"

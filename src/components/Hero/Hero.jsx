@@ -4,11 +4,11 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center bg-[#F8FAFC] py-20"
+      className="min-h-screen flex items-center bg-[#F8FAFC] py-16 sm:py-20"
     >
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
         <div>
-          <h1 className="text-5xl font-extrabold mb-4 leading-tight text-[#0F172A]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-[#0F172A]">
             {/* Automate Your Business with{" "} */}
             AI Automation Built to Drive {" "}
             {/* <span className="text-red-500">AI-Powered Solutions</span> */}
